@@ -16,17 +16,16 @@ Le serveur sera démarré et sera accessible à l'adresse `http://localhost:3000
 
 ## Routes
 
-Jouer
-GET /game/play/(pierre | feuille | ciseaux)
+Jouer.
+`GET /game/play/(pierre | feuille | ciseaux)`
+Afficher le score.
+`GET /game/score`
 
-Afficher le score
-GET /game/score
+Réinitialiser le jeu.
+`POST /game/reset`
 
-Réinitialiser le jeu
-POST /game/reset
-
-Mettre à jour le score manuellement
-PUT /game/score/:wins/:loses/:ties
+Mettre à jour le score manuellement.
+`PUT /game/score/:wins/:loses/:ties`
 
 ## Structure du projet
 
